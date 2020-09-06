@@ -1,0 +1,19 @@
+en:
+  eshtraits:
+    powers_set: "Powers set."
+    powers_cleared: "Powers cleared."
+    skills_set: "Skills set."
+    skills_cleared: "Skills cleared."
+    advantages_set: "Advantages set."
+    advantages_cleared: "Advantages cleared."
+    flaws_set: "Flaws set."
+    flaws_cleared: "Flaws cleared."
+    special_set: "Special set."
+    special_cleared: "Special cleared."
+
+    # SHEET STUFF
+    powers_title: "Powers"
+    skills_title: "Skills"
+    advantages_title: "Advantages"
+    flaws_title: "Flaws"
+    special_title: "Special"
