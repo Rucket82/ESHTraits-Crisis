@@ -10,6 +10,8 @@ en:
     flaws_cleared: "Flaws cleared."
     special_set: "Special set."
     special_cleared: "Special cleared."
+    comments_set: "Comments set."
+    comments_cleared: "Comments cleared."
 
     # SHEET STUFF
     powers_title: "Powers"
@@ -17,3 +19,4 @@ en:
     advantages_title: "Advantages"
     flaws_title: "Flaws"
     special_title: "Special"
+    comments_title: "Comments"

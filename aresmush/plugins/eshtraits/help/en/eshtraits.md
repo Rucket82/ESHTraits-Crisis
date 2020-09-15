@@ -30,6 +30,12 @@ You can set various traits on your character.
 `special/set <description>` - Sets your special notes.
 `special/clear` - Clears your special notes.
 
+This next trait is a special case.  Not everyone will have comments to add to their character and in many cases 'None' can be a viable option.
+
+`comments <name>` - List comments set for a character.
+`comments/set <description>` - Sets your comments.
+`comments/clear` - Clears your comments.
+
 Admins with the `manage_apps` permission can set other peoples' traits:
 
 `powers/set <name>=<description>` - Set a character's powers.
@@ -46,3 +52,6 @@ Admins with the `manage_apps` permission can set other peoples' traits:
 
 `special/set <name>=<description>` - Set a character's special notes.
 `special/clear <name>` - Clears a character's special notes.
+
+`comments/set <name>=<description>` - Set a character's comments.
+`comments/clear <name>` - Clears a character's comments.

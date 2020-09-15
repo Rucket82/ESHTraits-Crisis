@@ -5,5 +5,6 @@ module AresMUSH
       attribute :advantages
       attribute :flaws
 	  attribute :special
+	  attribute :comments
     end
   end

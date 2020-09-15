@@ -6,10 +6,10 @@ module AresMUSH
         def self.plugin_dir
             File.dirname(__FILE__)
         end
-
-        def self.shortcuts
-            Global.read_config("eshtraits", "shortcuts")
-        end	    
+		
+		def self.shortcuts
+			Global.read_config("eshtraits","shortcuts")
+		end
 
         def self.get_cmd_handler(client, cmd, enactor)
             case cmd.root
@@ -57,6 +57,15 @@ module AresMUSH
 					return ClearSpecialCmd
 				else
 					return SpecialCmd
+				end
+			when "comments"
+				case cmd.switch
+				when "set"
+					return SetCommentsCmd
+				when "clear"
+					return ClearCommentsCmd
+				else
+					return CommentsCmd
 				end
             when "sheet"
                 return SheetCmd

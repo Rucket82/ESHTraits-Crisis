@@ -6,7 +6,7 @@ module AresMUSH
       # Note: Viewer may be nil if someone's looking at the character page without being logged in
       # Example: return { goals: Website.format_markdown_for_html(char.goals) }
       def self.get_fields_for_viewing(char, viewer)
-        return { powers: Website.format_markdown_for_html(char.powers), skills: Website.format_markdown_for_html(char.skills), advantages: Website.format_markdown_for_html(char.advantages), flaws: Website.format_markdown_for_html(char.flaws), special: Website.format_markdown_for_html(char.special)}
+        return { powers: Website.format_markdown_for_html(char.powers), skills: Website.format_markdown_for_html(char.skills), advantages: Website.format_markdown_for_html(char.advantages), flaws: Website.format_markdown_for_html(char.flaws), special: Website.format_markdown_for_html(char.special), comments: Website.format_markdown_for_html(char.comments)}
       end
     
       # Return a hash of custom fields formatted for editing in the profile editor
@@ -18,7 +18,7 @@ module AresMUSH
       # Return a hash of custom fields formatted for editing in chargen
       # Example: return { goals: Website.format_input_for_html(char.goals) }
       def self.get_fields_for_chargen(char)
-        return { powers: Website.format_input_for_html(char.powers), skills: Website.format_input_for_html(char.skills), advantages: Website.format_input_for_html(char.advantages), flaws: Website.format_input_for_html(char.flaws), special: Website.format_input_for_html(char.special)}
+        return { powers: Website.format_input_for_html(char.powers), skills: Website.format_input_for_html(char.skills), advantages: Website.format_input_for_html(char.advantages), flaws: Website.format_input_for_html(char.flaws), special: Website.format_input_for_html(char.special), comments: Website.format_input_for_html(char.comments)}
       end
       
       # Custom fields will be in char_data[:custom]
@@ -36,6 +36,7 @@ module AresMUSH
         char.update(advantages: chargen_data[:custom][:advantages])
         char.update(flaws: chargen_data[:custom][:flaws])
 		char.update(special: chargen_data[:custom][:special])
+		char.update(comments: chargen_data[:custom][:comments])
         return []
       end
       
