@@ -63,10 +63,12 @@ module AresMUSH
         specialmsg = t('chargen.oops_missing', :missing => "Special")
       end
 	  
+	  comments = char.comments
+	  
 	  if (comments.length > 0)
-	    specialmsg = t('chargen.ok')
+	    commentsmsg = t('chargen.ok')
 	  else
-	    specialmsg = t('chargen.oops_missing', :missing => "Comments")
+	    commentsmsg = t('chargen.oops_missing', :missing => "Comments")
 	  end
 
       return (Chargen.format_review_status "\nChecking Powers.", powersmsg) + (Chargen.format_review_status "\nChecking Skills.", skillsmsg) + (Chargen.format_review_status "\nChecking Advantages.", advmsg) + (Chargen.format_review_status "\nChecking Flaws.", flawsmsg) + (Chargen.format_review_status "\nChecking Special.", flawsmsg) + (Chargen.format_review_status "\nChecking Comments.", commentsmsg)
