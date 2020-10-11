@@ -8,7 +8,7 @@ All the code that gets thrown into this repository is code that I've done for th
 One small update to the profile code for AresMUSH that makes the template output onto the game slightly cleaner, at least to my own personal preferences.
 
 # plugins-eshtraits
-ESH Traits Plugin for Ares -- This code is some a few changes made to the great work done by Clockwork.  You can find more information here-- https://github.com/ClockworkEJD/plugins-eshtraits
+ESH Traits Plugin for Ares -- This code is a few changes made to the great work done by Clockwork based on the needs of Crisis Point.  You can find more information on the core plugin here (which I highly recommend for comic-themed games) -- https://github.com/ClockworkEJD/plugins-eshtraits
 
 # credits
 Clockwork @ Empire State Heroes MUSH
