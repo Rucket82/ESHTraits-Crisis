@@ -29,6 +29,10 @@ module AresMUSH
 		def flaws
 			@char.flaws
 		end
+
+		def personality
+			@char.personality
+		end
 		
 		def special
 			@char.special

@@ -1,0 +1,78 @@
+<ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#supplementalindex">+</a></li>
+
+  {{#if char.roster}}
+    <li><a data-toggle="tab" href="#rosternotes">Roster Info</a></li>
+  {{/if}}
+  
+  <li><a data-toggle="tab" href="#systemhooks">RP Hooks</a></li>
+
+  {{#if char.background}}
+      <li><a data-toggle="tab" href="#systembg">Background</a></li> 
+  {{/if}}
+  
+  {{#if char.description}}
+  <li><a data-toggle="tab" href="#systemdesc">Description</a></li>
+  {{/if}}
+
+    {{#each char.profile as |profile| }}
+        <li><a data-toggle="tab" href="#{{profile.key}}">{{profile.name}}</a></li>
+    {{/each}}
+</ul>
+
+<div class="tab-content">
+
+  <div id="supplementalindex" class="tab-pane fade in active">
+      <div class="tab-cover">{{title}}</div>
+  </div>
+
+  {{#if char.roster}}
+  <div id="rosternotes" class="tab-pane fade">
+    <AnsiFormat @text={{char.roster.notes}} />
+    
+    <p>Contact: {{char.roster.contact}}</p>
+
+    {{#if char.roster.previously_played}}
+    <span class="label label-info">Previously Played</span>
+    {{/if}}
+
+    {{#if char.roster.app_required}}
+    <span class="label label-warning">App Required</span>
+    {{/if}}
+    
+  </div>
+  {{/if}}
+  
+  <div id="systemhooks" class="tab-pane fade">
+      <AnsiFormat @text={{char.rp_hooks}} />
+  </div>
+  
+  {{#if char.background}}
+  <div id="systembg" class="tab-pane fade">
+      <AnsiFormat @text={{char.background}} />
+   </div>
+  {{/if}} 
+  
+  {{#if char.description}}
+  <div id="systemdesc" class="tab-pane fade">
+       <AnsiFormat @text={{char.description}} />
+       
+       {{#if char.details}}
+       {{#each char.details as |detail|}}
+       <b>{{detail.name}}</b>: <AnsiFormat @text={{detail.desc}} />
+       {{/each}}
+       {{/if}}
+  </div>
+  {{/if}}
+
+  {{#each char.profile as |profile|}}
+  
+  <div id="{{profile.key}}" class="tab-pane fade ansi">
+  
+      <AnsiFormat @text={{profile.text}} />
+      
+  </div>
+  
+  {{/each}}
+  
+ </div>

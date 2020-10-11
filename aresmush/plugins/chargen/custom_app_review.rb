@@ -54,24 +54,32 @@ module AresMUSH
       else
         flawsmsg = t('chargen.oops_missing', :missing => "Flaws")
       end
+
+      personality = char.personality
+
+      if (personality.length > 0)
+        personalitymsg = t('chargen.ok')
+      else
+        personalitymsg = t('chargen.oops_missing', :missing => "Personality")
+      end
 	  
-	  special = char.special
+	    special = char.special
 	  
-	  if (special.length > 0)
+	    if (special.length > 0)
         specialmsg = t('chargen.ok')
       else
         specialmsg = t('chargen.oops_missing', :missing => "Special")
       end
 	  
-	  comments = char.comments
+	    comments = char.comments
 	  
-	  if (comments.length > 0)
-	    commentsmsg = t('chargen.ok')
-	  else
-	    commentsmsg = t('chargen.oops_missing', :missing => "Comments")
-	  end
+	    if (comments.length > 0)
+	      commentsmsg = t('chargen.ok')
+	    else
+	      commentsmsg = t('chargen.oops_missing', :missing => "Comments")
+	    end
 
-      return (Chargen.format_review_status "\nChecking Powers.", powersmsg) + (Chargen.format_review_status "\nChecking Skills.", skillsmsg) + (Chargen.format_review_status "\nChecking Advantages.", advmsg) + (Chargen.format_review_status "\nChecking Flaws.", flawsmsg) + (Chargen.format_review_status "\nChecking Special.", flawsmsg) + (Chargen.format_review_status "\nChecking Comments.", commentsmsg)
+      return (Chargen.format_review_status "\nChecking Powers.", powersmsg) + (Chargen.format_review_status "\nChecking Skills.", skillsmsg) + (Chargen.format_review_status "\nChecking Advantages.", advmsg) + (Chargen.format_review_status "\nChecking Flaws.", flawsmsg) + (Chargen.format_review_status "\nChecking Personality.", personalitymsg) + (Chargen.format_review_status "\nChecking Special.", flawsmsg) + (Chargen.format_review_status "\nChecking Comments.", commentsmsg)
 
     end
   end

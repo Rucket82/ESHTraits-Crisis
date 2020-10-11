@@ -4,7 +4,8 @@ module AresMUSH
       attribute :skills
       attribute :advantages
       attribute :flaws
-	  attribute :special
-	  attribute :comments
+      attribute :personality
+	    attribute :special
+	    attribute :comments
     end
   end

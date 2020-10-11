@@ -26,6 +26,10 @@ You can set various traits on your character.
 `flaws/set <description>` - Sets your flaws.
 `flaws/clear` - Clears your flaws.
 
+`personality <name>` - Lists personality traits for a character.
+`personality/set <description>` - Sets your personality traits.
+`personality/clear` - Clears your personality traits.
+
 `special <name>` - List special notes for a character.
 `special/set <description>` - Sets your special notes.
 `special/clear` - Clears your special notes.
@@ -49,6 +53,9 @@ Admins with the `manage_apps` permission can set other peoples' traits:
 
 `flaws/set <name>=<description>` - Set a character's flaws.
 `flaws/clear <name>` - Clears a character's flaws.
+
+`personality/set <name>=<description>` - Sets a character's personality traits.
+`personality/clear <name>` - Clears a character's personality traits.
 
 `special/set <name>=<description>` - Set a character's special notes.
 `special/clear <name>` - Clears a character's special notes.

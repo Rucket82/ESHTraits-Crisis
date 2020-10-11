@@ -1,0 +1,235 @@
+- title: Play
+  menu:
+    - title: Create a Character
+      route: chargen
+    - title: Pre-Made Characters
+      route: roster
+    - divider: true
+    - title: Play
+      route: play
+    - title: Active Scenes
+      route: scenes-live
+    - title: Start New Scene
+      route: scene-create
+    - divider: true
+    - title: Who's Online
+      route: who
+    - title: Forum
+      route: forum
+    - title: Mail
+      route: mail
+    - divider: true
+    - title: Web Client
+      route: client
+- title: Directory
+  menu:
+    - title: Characters
+      route: characters
+    - title: Scenes
+      route: scenes
+    - title: Plots
+      route: plots
+    - divider: true
+    - title: Players
+      route: players
+    - title: Game Admin
+      route: admins
+    - title: Census
+      route: census
+    - title: Roster
+      route: roster
+    - title: Locations
+      route: locations
+    - divider: true
+    - title: Files
+      route: files
+    - title: Achievements
+      route: achievements
+- title: CharGen
+  menu:
+    - title: Guidelines
+      route: wiki-page
+      id: cgguidelines
+    - target: blank
+      title: CharGen Guide <i class="fa fa-external-link-alt" aria-hidden="true">
+      url: https://docs.google.com/document/d/11JTOjwARfDpKb1fs54p9UJLgeFqOmkSev1yH_aV4KC8/edit
+    - divider: true
+    - title: Species
+      route: wiki-page
+      id: species
+    - divider: true
+    - title: Powers
+      route: wiki-page
+      id: powers
+    - title: Skills
+      route: wiki-page
+      id: skills
+    - title: Advantages
+      route: wiki-page
+      id: advantages
+    - title: Flaws
+      route: wiki-page
+      id: flaws
+    - title: Personality
+      route: wiki-page
+      id: personality
+    - title: Special
+      route: wiki-page
+      id: special
+- title: Teams
+  menu:
+    - title: Birds of Prey
+      route: wiki-page
+      id: birds_of_prey
+    - title: DV8
+      route: wiki-page
+      id: dv8
+    - title: Gen-13
+      route: wiki-page
+      id: gen-13
+    - title: Gotham Knights
+      route: wiki-page
+      id: gotham_knights
+    - title: Justice League
+      route: wiki-page
+      id: justice_league
+    - title: New Mercenaries
+      route: wiki-page
+      id: new_mercenaries
+    - title: Planetary
+      route: wiki-page
+      id: Planetary
+    - title: Stormwatch
+      route: wiki-page
+      id: Stormwatch
+    - title: Suicide Squad
+      route: wiki-page
+      id: suicide_squad
+    - title: The Authority
+      route: wiki-page
+      id: the_authority
+    - title: Titans
+      route: wiki-page
+      id: titans
+    - title: WildCATS
+      route: wiki-page
+      id: wildcats
+    - title: Young Justice
+      route: wiki-page
+      id: young_justice
+- title: Families
+  menu:
+    - title: Amazonians
+      route: wiki-page
+      id: amazon_family
+    - title: Arrow Family
+      route: wiki-page
+      id: arrow_family
+    - title: Atlanteans
+      route: wiki-page
+      id: atlantean_family
+    - title: Bat Family
+      route: wiki-page
+      id: bat_family
+    - title: Flash Family
+      route: wiki-page
+      id: flash_family
+    - title: Kherans
+      route: wiki-page
+      id: kheran_family
+    - title: Lantern Corps
+      route: wiki-page
+      id: lantern_corps
+    - title: Marvel Family
+      route: wiki-page
+      id: marvel_family
+    - title: Mystical Arts
+      route: wiki-page
+      id: mystical_arts
+    - title: Super Family
+      route: wiki-page
+      id: super_family
+    - title: Team 7
+      route: wiki-page
+      id: team_7
+- title: Theme
+  menu:
+    - title: Overview
+      route: wiki-page
+      id: theme
+    - divider: true
+    - title: Ancient History
+      route: wiki-page
+      id: ancienthistorytimeline
+    - title: Middle History
+      route: wiki-page
+      id: middlehistorytimeline
+    - title: The Teams Era
+      route: wiki-page
+      id: teamseratimeline
+    - title: Modern Heroic Age
+      route: wiki-page
+      id: moderntimeline
+    - divider: true
+    - title: Superheroes
+      route: wiki-page
+      id: Superheroes
+    - title: Technology
+      route: wiki-page
+      id: technology
+    - title: Serums / Enhancements
+      route: wiki-page
+      id: serums_and_enhancements
+    - divider: true
+    - title: GeoPolitics
+      route: wiki-page
+      id: geopolitics
+    - title: Media
+      route: wiki-page
+      id: media
+    - title: Organizations
+      route: wiki-page
+      id: organization
+- title: Wiki
+  menu:
+    - title: Home
+      route: wiki
+    - divider: true
+    - title: Create New Page
+      route: wiki-create
+    - title: All Pages
+      route: wiki-all
+    - title: Search Wiki
+      route: search-wiki
+    - title: Tags
+      route: wiki-tags
+    - title: Recent Changes
+      route: recent-changes
+    - divider: true
+    - title: Files
+      route: files
+    - id: markdown
+      title: Editing Help
+      route: help-topic
+- title: Help
+  menu:
+    - title: Requests
+      route: jobs
+    - title: Account
+      route: account
+    - divider: true
+    - title: Game Help
+      route: help
+    - title: Search
+      route: search-wiki
+    - id: markdown
+      title: Markdown Reference
+      route: help-topic
+    - title: Emoji Reference
+      route: emoji
+    - title: Terms of Service
+      route: tos
+    - divider: true
+    - target: blank
+      title: MUSH 101 Tutorial <i class="fa fa-external-link-alt" aria-hidden="true">
+      url: 'https://aresmush.com/mush-101/'

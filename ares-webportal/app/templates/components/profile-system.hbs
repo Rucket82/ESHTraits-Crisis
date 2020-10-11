@@ -1,0 +1,54 @@
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#systeminfo">+</a></li>
+
+  <ProfileFs3Tabs @char={{char}} @game={{game}} />
+
+  {{#if char.achievements}}
+      <li><a data-toggle="tab" href="#systemachievements">Achievements</a></li>
+  {{/if}}
+
+  {{#if traitsExtraInstalled}}
+    <li><a data-toggle="tab" href="#systemtraits">Traits</a></li>
+  {{/if}}
+  
+  {{#if fateExtraInstalled}}
+    <li><a data-toggle="tab" href="#systemfate">Sheet</a></li>
+  {{/if}}
+  
+  {{#if char.siteinfo}}
+    <li><a data-toggle="tab" href="#systemsite">Site Info</a></li>
+  {{/if}}
+  
+  <ProfileCustomTabs @char={{char}} @game={{game}} />
+</ul>
+
+<div class="tab-content">
+  <div id="systeminfo" class="tab-pane fade in active">
+      <div class="tab-cover">System Information</div>
+  </div>
+  
+  <ProfileFs3 @char={{char}} @game={{game}} @reloadChar={{action "reloadChar"}} />
+  
+  {{#if traitsExtraInstalled}}
+    <ProfileTraits @char={{char}} />
+  {{/if}}
+  
+  {{#if fateExtraInstalled}}
+    <ProfileFate @char={{char}} />
+  {{/if}}
+  
+  {{#if char.achievements}}
+  <div id="systemachievements" class="tab-pane fade">
+      <CharAchievements @achievements={{char.achievements}} />
+  </div>
+  {{/if}}
+  
+  {{#if char.siteinfo}}
+  <div id="systemsite" class="tab-pane fade">
+      <ProfileSiteInfo @char={{char}} />
+  </div>
+  {{/if}}
+  
+  <ProfileCustom @char={{char}} @game={{game}} @reloadChar={{action "reloadChar"}} />
+  
+</div>
